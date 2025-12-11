@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linus Dolck - Portfolio</title>
+    <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- =========================================
+         Header Section
+         ========================================= -->
+    <header class="site-header">
+        <!-- Website Logo -->
+        <a class="logo" href="index.html">Linus Dolck</a>
+        
+        <!-- Navigation Bar -->
+        <nav class="nav-bar" role="navigation">
+            <ul class="nav-list">
+                <!-- Navigation Links -->
+                <li><a class="nav-link active" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link" href="skills.html">Skills</a></li>
+                <li><a class="nav-link" href="projects.html">Projects</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- =========================================
+         Main Content Section
+         ========================================= -->
+    <main class="main-layout">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <!-- Hero Text -->
+                <div class="hero-text">
+                    <h1>Hello, I'm Linus Dolck</h1>
+                    <p>A passionate web developer and designer.</p>
+                    <a href="contact.html" class="cta-button">Contact Me</a>
+                </div>
+                <!-- Hero Image -->
+                <img src="assets/images/profile-image.png" alt="Profile image of Linus Dolck" class="profile-image">
+            </div>
+        </section>
+
+        <!-- My Journey Section -->
+        <section class="journey-timeline">
+            <h2>My Journey</h2>
+            <div class="timeline-container">
+                <!-- Timeline Box 1 -->
+                <div class="timeline-box">
+                    <span class="date">2024</span>
+                    <p>Graduated from Kristianstad University</p>
+                </div>
+                <!-- Timeline Box 2 -->
+                <div class="timeline-box">
+                    <span class="date">2022</span>
+                    <p>Exchange studies in Valencia, Spain</p>
+                </div>
+                <!-- Timeline Box 3 -->
+                <div class="timeline-box">
+                    <span class="date">2021</span>
+                    <p>Started to work at Nordea as a Service Agent</p>
+                </div>
+                <!-- Timeline Box 4 -->
+                <div class="timeline-box">
+                    <span class="date">2020</span>
+                    <p>Started my studies in Economics</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <!-- Skill Box 1 -->
+                <div class="skill-box" style="--skill-level: 60%;">
+                    <div class="skill-label">
+                        <span>Python</span>
+                        <span class="skill-percentage">60%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span></span>
+                    </div>
+                </div>
+                <!-- Skill Box 2 -->
+                <div class="skill-box" style="--skill-level: 40%;">
+                    <div class="skill-label">
+                        <span>Java</span>
+                        <span class="skill-percentage">40%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span></span>
+                    </div>
+                </div>
+                <!-- Skill Box 3 -->
+                <div class="skill-box" style="--skill-level: 35%;">
+                    <div class="skill-label">
+                        <span>C#</span>
+                        <span class="skill-percentage">35%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <!-- Project Box 1 -->
+                <div class="project-box">
+                    <img src="assets/images/podcaster.png" alt="Project 1 Image" class="project-image">
+                    <p>This is a case in interaction design where I designed a new application for Podcasts.</p>
+                </div>
+                <!-- Project Box 2 -->
+                <div class="project-box">
+                    <img src="assets/images/BI dashboard.png" alt="Project 2 Image" class="project-image">
+                    <p>This is a project where I developed a dashboard for a business intelligence case.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Me Section -->
+        <section class="contact-section">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or want to work together, feel free to reach out!</p>
+            <form class="contact-form">
+                <!-- Email Input -->
+                <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+                <!-- Message Textarea -->
+                <textarea name="message" placeholder="Your Message" class="contact-textarea" required></textarea>
+                <!-- Submit Button -->
+                <button type="submit" class="cta-button">Send</button>
+            </form>
+            <div class="social-links">
+                <!-- Social Media Links -->
+                <a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon">LinkedIn</a>
+                <a href="https://github.com" target="_blank" class="social-icon">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========================================
+         Footer Section
+         ========================================= -->
+    <footer class="site-footer" role="contentinfo">
+        <p>&copy; 2025 Linus Dolck. All rights reserved.</p>
+        <nav class="footer-nav">
+            <!-- Footer Navigation Links -->
+            <a href="terms.html" class="footer-link">Terms and Conditions</a> | 
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        </nav>
+        <div class="social-links">
+            <!-- Social Media Links -->
+            <a href="https://twitter.com" target="_blank" class="social-icon">
+                <img src="assets/images/twitter.png" alt="Twitter Icon" class="social-icon-image">
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon">
+                <img src="assets/images/linkedin.png" alt="LinkedIn Icon" class="social-icon-image">
+            </a>
+            <a href="https://github.com" target="_blank" class="social-icon">
+                <img src="assets/images/github.png" alt="GitHub Icon" class="social-icon-image">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

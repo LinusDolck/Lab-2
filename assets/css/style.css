@@ -1,0 +1,467 @@
+/* =========================================
+   General Styles
+   ========================================= */
+/* These styles apply to the entire website */
+body {
+    font-family: Arial, sans-serif; /* Sets the default font for the website */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    background-color: #0f172a; /* Sets the background color to dark blue */
+    color: #e5e7eb; /* Sets the default text color to light gray */
+}
+
+/* =========================================
+   Navigation Bar
+   ========================================= */
+/* Styles for the navigation bar at the top of the website */
+.site-header {
+    display: flex; /* Makes the header a flex container */
+    align-items: center; /* Vertically centers items */
+    justify-content: space-between; /* Spaces items evenly */
+    padding: 10px 20px; /* Adds padding inside the header */
+    background-color: #1e293b; /* Sets the background color to dark gray */
+    position: sticky; /* Makes the header stick to the top of the page */
+    top: 0; /* Ensures the header stays at the top */
+    z-index: 1000; /* Ensures the header is above other elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.logo {
+    text-decoration: none; /* Removes underline from the logo link */
+    font-size: 1.5rem; /* Sets the font size for the logo */
+    font-weight: bold; /* Makes the logo text bold */
+    color: #3b82f6; /* Sets the logo color to blue */
+}
+
+.nav-list {
+    list-style: none; /* Removes default list styling */
+    display: flex; /* Makes the list a flex container */
+    gap: 20px; /* Adds space between navigation links */
+    margin: 0; /* Removes default margin */
+}
+
+.nav-link {
+    text-decoration: none; /* Removes underline from navigation links */
+    color: #e5e7eb; /* Sets the link color to light gray */
+    font-weight: bold; /* Makes the link text bold */
+    transition: color 0.3s ease; /* Adds a smooth color transition on hover */
+}
+
+.nav-link:hover {
+    color: #3b82f6; /* Changes the link color to blue on hover */
+}
+
+/* =========================================
+   Hero Section
+   ========================================= */
+/* Styles for the hero section at the top of the page */
+.hero-section {
+    display: flex; /* Makes the hero section a flex container */
+    align-items: center; /* Vertically centers items */
+    justify-content: center; /* Horizontally centers items */
+    padding: 80px 20px; /* Adds padding inside the hero section */
+    background: linear-gradient(135deg, #1e293b, #0f172a); /* Adds a gradient background */
+    color: #e5e7eb; /* Sets the text color to light gray */
+    text-align: center; /* Centers the text */
+}
+
+.hero-container {
+    display: flex; /* Makes the container a flex container */
+    align-items: center; /* Vertically centers items */
+    gap: 40px; /* Adds space between items */
+}
+
+.profile-image {
+    width: 200px; /* Sets the width of the profile image */
+    height: 200px; /* Sets the height of the profile image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+}
+
+.hero-text {
+    text-align: left; /* Aligns the text to the left */
+}
+
+.cta-button {
+    margin-top: 20px; /* Adds space above the button */
+    padding: 15px 30px; /* Adds padding inside the button */
+    background-color: #3b82f6; /* Sets the button background color to blue */
+    color: #fff; /* Sets the button text color to white */
+    border: none; /* Removes the default border */
+    border-radius: 8px; /* Rounds the corners of the button */
+    font-size: 1rem; /* Sets the font size */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: background-color 0.3s ease; /* Adds a smooth background color transition */
+    text-decoration: none; /* Removes underline from the button */
+}
+
+.cta-button:hover {
+    background-color: #2563eb; /* Changes the button background color on hover */
+}
+
+/* =========================================
+   My Journey Section
+   ========================================= */
+/* Styles for the "My Journey" section */
+.journey-timeline {
+    padding: 60px 20px; /* Adds padding inside the section */
+    background-color: #1e293b; /* Sets the background color to dark gray */
+    color: #e5e7eb; /* Sets the text color to light gray */
+    text-align: center; /* Centers the text */
+    border-radius: 8px; /* Rounds the corners of the section */
+    margin-bottom: 40px; /* Adds space below the section */
+}
+
+.journey-timeline h2 {
+    font-size: 2rem; /* Sets the font size for the heading */
+    color: #3b82f6; /* Sets the heading color to blue */
+    margin-bottom: 40px; /* Adds space below the heading */
+    text-transform: uppercase; /* Makes the text uppercase */
+    letter-spacing: 1px; /* Adds spacing between letters */
+}
+
+.timeline-container {
+    display: flex; /* Makes the container a flex container */
+    justify-content: space-between; /* Spaces items evenly */
+    gap: 20px; /* Adds space between items */
+    flex-wrap: wrap; /* Wraps items to the next row if needed */
+}
+
+.timeline-box {
+    flex: 1 1 calc(25% - 20px); /* Sets the width of each box */
+    background-color: #f5f7fa; /* Sets the background color to light gray */
+    border-radius: 12px; /* Rounds the corners of the box */
+    padding: 20px; /* Adds padding inside the box */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    text-align: center; /* Centers the text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds smooth transitions */
+}
+
+.timeline-box:hover {
+    transform: translateY(-5px); /* Moves the box up slightly on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow on hover */
+}
+
+.date {
+    display: block; /* Makes the date a block element */
+    font-size: 1.2rem; /* Sets the font size */
+    font-weight: bold; /* Makes the text bold */
+    color: #2563eb; /* Sets the text color to blue */
+    margin-bottom: 10px; /* Adds space below the date */
+}
+
+.timeline-box p {
+    font-size: 0.95rem; /* Sets the font size for the paragraph */
+    line-height: 1.6; /* Sets the line height */
+    color: #1e293b; /* Sets the text color to dark gray */
+}
+
+/* =========================================
+   Skills Section
+   ========================================= */
+/* Styles for the "Skills" section */
+.skills-section {
+    padding: 60px 20px; /* Adds padding inside the section */
+    background-color: #0f172a; /* Sets the background color to dark blue */
+    color: #e5e7eb; /* Sets the text color to light gray */
+}
+
+.skills-container {
+    display: flex; /* Makes the container a flex container */
+    flex-direction: column; /* Stacks items vertically */
+    gap: 20px; /* Adds space between items */
+}
+
+.skill-box {
+    display: flex; /* Makes the skill box a flex container */
+    flex-direction: column; /* Stacks items vertically */
+    gap: 10px; /* Adds space between items */
+}
+
+.skill-label {
+    display: flex; /* Makes the label a flex container */
+    justify-content: space-between; /* Spaces items evenly */
+    font-size: 1rem; /* Sets the font size */
+    font-weight: bold; /* Makes the text bold */
+    color: #e5e7eb; /* Sets the text color to light gray */
+}
+
+.skill-bar {
+    height: 12px; /* Sets the height of the skill bar */
+    border-radius: 999px; /* Makes the bar fully rounded */
+    background: rgba(255, 255, 255, 0.1); /* Sets a subtle background color */
+    overflow: hidden; /* Ensures content stays within the bar */
+    position: relative; /* Positions the bar relative to its container */
+}
+
+.skill-bar > span {
+    display: block; /* Makes the span a block element */
+    height: 100%; /* Sets the height to fill the bar */
+    background: linear-gradient(90deg, #3b82f6, #2563eb); /* Adds a gradient background */
+    width: 0%; /* Starts the bar at 0% width */
+    transition: width 600ms ease; /* Adds a smooth width transition */
+}
+
+.skill-box:hover .skill-bar > span {
+    width: var(--skill-level, 70%); /* Expands the bar to the skill level on hover */
+}
+
+.skill-percentage {
+    font-size: 0.9rem; /* Sets the font size */
+    color: #d1d5db; /* Sets the text color to muted gray */
+    text-align: right; /* Aligns the text to the right */
+}
+
+/* =========================================
+   Projects Section
+   ========================================= */
+/* Styles for the "Projects" section */
+.projects-section {
+    padding: 60px 20px; /* Adds padding inside the section */
+    background-color: #1e293b; /* Sets the background color to dark gray */
+    color: #e5e7eb; /* Sets the text color to light gray */
+    text-align: center; /* Centers the text */
+}
+
+.projects-section h2 {
+    font-size: 2rem; /* Sets the font size for the heading */
+    color: #3b82f6; /* Sets the heading color to blue */
+    margin-bottom: 40px; /* Adds space below the heading */
+    text-transform: uppercase; /* Makes the text uppercase */
+    letter-spacing: 1px; /* Adds spacing between letters */
+}
+
+.projects-container {
+    display: flex; /* Makes the container a flex container */
+    gap: 30px; /* Adds space between project cards */
+    justify-content: center; /* Centers the project cards */
+    flex-wrap: wrap; /* Wraps project cards to the next row if needed */
+}
+
+.project-box {
+    background: linear-gradient(135deg, #2a3749, #1e293b); /* Adds a gradient background */
+    border-radius: 12px; /* Rounds the corners of the project box */
+    overflow: hidden; /* Ensures content stays within the box */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds smooth transitions */
+    width: calc(33.333% - 30px); /* Sets the width of each project box */
+    max-width: 350px; /* Limits the maximum width of the project box */
+    text-align: left; /* Aligns the text to the left */
+}
+
+.project-box:hover {
+    transform: translateY(-5px); /* Moves the box up slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow on hover */
+}
+
+.project-image {
+    width: 100%; /* Makes the image responsive */
+    height: 200px; /* Sets a fixed height for the image */
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+    border-bottom: 4px solid #3b82f6; /* Adds a blue border below the image */
+}
+
+.project-content {
+    padding: 20px; /* Adds padding inside the project content */
+}
+
+.project-title {
+    font-size: 1.25rem; /* Sets the font size for the project title */
+    color: #e5e7eb; /* Sets the text color to light gray */
+    margin-bottom: 10px; /* Adds space below the title */
+    font-weight: bold; /* Makes the title text bold */
+}
+
+.project-description {
+    font-size: 0.95rem; /* Sets the font size for the project description */
+    color: #d1d5db; /* Sets the text color to muted gray */
+    line-height: 1.6; /* Sets the line height for better readability */
+}
+
+/* =========================================
+   Contact Me Section
+   ========================================= */
+/* Styles for the "Contact Me" section */
+.contact-section {
+    padding: 60px 20px; /* Adds padding inside the section */
+    background-color: #1e293b; /* Sets the background color to dark gray */
+    color: #e5e7eb; /* Sets the text color to light gray */
+    text-align: center; /* Centers the text */
+    border-radius: 8px; /* Rounds the corners of the section */
+    margin-top: 40px; /* Adds space above the section */
+}
+
+.contact-section h2 {
+    font-size: 2rem; /* Sets the font size for the heading */
+    color: #3b82f6; /* Sets the heading color to blue */
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+.contact-section p {
+    font-size: 1rem; /* Sets the font size for the paragraph */
+    margin-bottom: 30px; /* Adds space below the paragraph */
+    color: #e5e7eb; /* Sets the text color to light gray */
+}
+
+.contact-form {
+    display: flex; /* Makes the form a flex container */
+    flex-direction: column; /* Stacks form elements vertically */
+    gap: 20px; /* Adds space between form elements */
+    max-width: 600px; /* Limits the maximum width of the form */
+    margin: 0 auto; /* Centers the form horizontally */
+}
+
+.contact-input,
+.contact-textarea {
+    width: 100%; /* Makes the inputs and textarea take full width */
+    padding: 15px; /* Adds padding inside the inputs and textarea */
+    border: none; /* Removes the default border */
+    border-radius: 8px; /* Rounds the corners of the inputs and textarea */
+    background-color: #3b3f51; /* Sets the background color to dark gray */
+    color: #e5e7eb; /* Sets the text color to light gray */
+    font-size: 1rem; /* Sets the font size */
+    outline: none; /* Removes the default outline */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Adds smooth transitions for background and shadow */
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+    background-color: #4b5563; /* Changes the background color on focus */
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); /* Adds a subtle blue glow on focus */
+}
+
+.contact-textarea {
+    height: 120px; /* Sets the height of the textarea */
+    resize: none; /* Prevents resizing of the textarea */
+}
+
+/* =========================================
+   Social Links
+   ========================================= */
+/* Styles for the social media links */
+.social-links {
+    margin-top: 30px; /* Adds space above the social links */
+    display: flex; /* Makes the container a flex container */
+    justify-content: center; /* Centers the social links */
+    gap: 20px; /* Adds space between the icons */
+}
+
+.social-icon {
+    display: inline-block; /* Makes the icon an inline block element */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds smooth hover effects */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarges the icon on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow on hover */
+}
+
+.social-icon-image {
+    width: 30px; /* Sets the width of the social media icons */
+    height: 30px; /* Sets the height of the social media icons */
+    object-fit: contain; /* Ensures the icons maintain their aspect ratio */
+}
+
+/* =========================================
+   Footer
+   ========================================= */
+/* Styles for the footer at the bottom of the website */
+.site-footer {
+    padding: 20px; /* Adds padding inside the footer */
+    background-color: #0f172a; /* Sets the background color to dark blue */
+    color: #e5e7eb; /* Sets the text color to light gray */
+    text-align: center; /* Centers the text */
+    border-top: 2px solid #3b82f6; /* Adds a blue border at the top of the footer */
+}
+
+.footer-nav a {
+    color: #3b82f6; /* Sets the link color to blue */
+    text-decoration: none; /* Removes underline from footer links */
+    margin: 0 10px; /* Adds space between footer links */
+    transition: color 0.3s ease; /* Adds a smooth color transition on hover */
+}
+
+.footer-nav a:hover {
+    color: #2563eb; /* Changes the link color to a darker blue on hover */
+}
+
+/* =========================================
+   Responsive Design
+   ========================================= */
+/* Styles for smaller screen sizes */
+@media (max-width: 1024px) {
+    .timeline-box {
+        flex: 1 1 calc(50% - 20px); /* Two boxes per row on medium screens */
+    }
+
+    .project-box {
+        width: calc(50% - 20px); /* Two project boxes per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-container {
+        flex-direction: column; /* Stacks timeline boxes vertically on smaller screens */
+        gap: 30px; /* Adds space between stacked boxes */
+    }
+
+    .timeline-box {
+        flex: 1 1 100%; /* Each timeline box takes full width */
+    }
+
+    .project-box {
+        width: 100%; /* Each project box takes full width */
+    }
+
+    .project-image {
+        height: 180px; /* Adjusts the image height for smaller screens */
+    }
+
+    .contact-section {
+        padding: 40px 15px; /* Reduce padding for smaller screens */
+    }
+
+    .contact-form {
+        max-width: 100%; /* Allow the form to take the full width */
+        padding: 0 10px; /* Add some padding inside the form */
+    }
+
+    .contact-input,
+    .contact-textarea {
+        font-size: 0.9rem; /* Slightly smaller font size */
+        padding: 10px; /* Reduce padding inside inputs */
+    }
+
+    .cta-button {
+        font-size: 0.9rem; /* Slightly smaller button text */
+        padding: 10px 20px; /* Adjust button size */
+    }
+
+}
+
+/* Responsive navigation (mobile) */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column; /* Stacks links vertivally */
+        align-items: center; /* Centers the links */
+        gap: 10px; /* Reduces gap between links */
+    }
+
+}
+
+/* =========================================
+   Focus Effects
+   ========================================= */
+/* Adds focus styles for accessibility */
+.nav-link:focus,
+.cta-button:focus,
+.social-icon:focus {
+    outline: 2px solid #3b82f6; /* Adds a blue outline on focus */
+    outline-offset: 2px; /* Adds space between the outline and the element */
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+    outline: 2px solid #3b82f6; /* Adds a blue outline on focus */
+    outline-offset: 2px; /* Adds space between the outline and the element */
+}
