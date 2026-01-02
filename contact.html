@@ -6,6 +6,9 @@
     <title>Contact Me - Linus Dolck</title>
     <!-- Link to the main stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- New Contact styles-->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <!-- =========================================
@@ -36,19 +39,53 @@
         <section class="contact-section">
             <h2>Contact Me</h2>
             <p>If you have any questions or want to work together, feel free to reach out!</p>
-            
-            <!-- Contact Form -->
-            <form class="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
-                <!-- Email Input -->
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" class="contact-input" required>
-                
-                <!-- Message Textarea -->
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Your Message" class="contact-textarea" required></textarea>
-                
-                <!-- Submit Button -->
-                <button type="submit" class="cta-button">Send</button>
+        
+        <form id="contactForm" class="contact-form">
+
+            <!-- First Name -->
+            <label>First Name *</label>
+            <input type="text" id="firstName">
+            <small class="error-message" id="firstNameError"></small>
+
+            <!-- Last Name -->
+            <label>Last Name *</label>
+            <input type="text" id="lastName">
+            <small class="error-message" id="lastNameError"></small>
+
+            <!-- Email -->
+            <label>Email *</label>
+            <input type="email" id="email">
+            <small class="error-message" id="emailError"></small>
+
+            <!-- Phone (Optional) -->
+            <label>Phone Number</label>
+            <input type="tel" id="phone">
+
+            <!-- Subject -->
+            <label>Subject *</label>
+            <select id="subject">
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="feedback">Feedback</option>
+            </select>
+            <small class="error-message" id="subjectError"></small>
+
+            <!-- Message -->
+            <label>Message *</label>
+            <textarea id="message"></textarea>
+            <div id="charCounter">0 / 20 characters</div>
+            <small class="error-message" id="messageError"></small>
+
+            <!-- Buttons -->
+             <div class="button-group">
+                <button type="submit" class="cta-button">Submit</button>
+                <button type="reset" class="cta-button">Reset</button>
+            </div>
+
+            <!-- Sucess message -->
+             <p id="successMessage"></p>
+        
             </form>
         </section>
     </main>
