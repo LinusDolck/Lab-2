@@ -22,4 +22,4 @@ This is a portfolio website that includes a fully functional contact form with v
 
 ## Setup Instructions
 1. Clone the repository:
-   git clone https:
+   git clone https://github.com/LinusDolck/Lab-2.git
