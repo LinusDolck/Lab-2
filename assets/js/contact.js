@@ -54,3 +54,66 @@ function validateMessage() {
     clearError(message);
     return true;
 }
+
+// Character counter for message
+message.addEventListener("input", ()=> {
+    const length = message.value.length;
+    charCounter.textContent = `${length} / 20 characters`;
+
+    if (length < 20) {
+        charCounter.style.color = "red";
+    }
+    else {
+        charCounter.style.color = "green";
+    }
+} );
+
+// Form submit handler
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const valid =
+        validateName(firstName) &&
+        validateName(lastName) &&
+        validateEmail() &&
+        validateMessage() &&
+        subject.value.trim() !== "";
+
+    if (!subject.value) {
+        showError(subject, "Please select a subject.");
+    } else {
+        clearError(subject);
+    }
+
+    if (valid) {
+        successMessage.textContent = `Thank you ${firstName.value}! I will contact you soon!`;
+        successMessage.style.display = "block";
+
+        setTimeout(() => {
+            successMessage.style.display = "none";
+        }, 3000);
+
+        // Reset the from and the character counter
+        form.reset();
+        charCounter.textContent = "0 / 20 characters";
+        charCounter.className = ""; // Reset character counter color
+    }
+} );
+
+// Reset button handler
+resetBtn.addEventListener("click", () => {
+    form.reset();
+    successMessage.textContent = "";
+    successMessage.style.display = "none";
+
+    // Reset character counter
+    charCounter.textContent = "0 / 20 characters"; // Reset character counter text
+    charCounter.className = ""; // Reset character counter color
+
+    // Clear all error messages and styles
+    document.querySelectorAll(".error-message").forEach((el) => (el.style.display = "none"));
+    document.querySelectorAll("input, textarea").forEach((el) => {
+        el.classList.remove("error", "valid");
+    });
+}
+);
