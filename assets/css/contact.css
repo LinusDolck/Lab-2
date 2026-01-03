@@ -1,74 +1,150 @@
-/* Contact form specific styles */
+/* ===========================
+   Contact Form Specific Styles
+   =========================== */
 
+/* General input, textarea, and select styles */
 .contact-form input,
 .contact-form textarea,
 .contact-form select {
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 6px;
-    width: 100%;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    border: 1px solid #ccc; /* Default border color */
+    padding: 10px; /* Adds padding inside the fields */
+    border-radius: 6px; /* Rounds the corners of the fields */
+    width: 100%; /* Makes the fields take up the full width of their container */
+    font-size: 1rem; /* Sets the font size for the fields */
+    margin-bottom: 1rem; /* Adds spacing between fields */
 }
 
+/* Focus state for input, textarea, and select fields */
 .contact-form input:focus,
 .contact-form textarea:focus,
 .contact-form select:focus {
-    border-color: #3b82f6;
-    outline: none;
+    border-color: #3b82f6; /* Changes the border color to blue when focused */
+    outline: none; /* Removes the default focus outline */
 }
 
+/* Error state for input, textarea, and select fields */
 input.error,
 textarea.error,
-select.valid {
-    border-color: #dc3545;
+select.error {
+    border-color: #dc3545; /* Red border for invalid fields */
 }
 
+/* Valid state for input, textarea, and select fields */
 input.valid,
 textarea.valid,
 select.valid {
-    border-color: #28a745;
+    border-color: #28a745; /* Green border for valid fields */
 }
 
+/* Error message styles */
 .error-message {
-    color:#dc3545;
-    font-size: 0.85rem;
-    height: 14px;
-    transition: opacity 0.3s ease;
+    color: #dc3545; /* Red text for error messages */
+    font-size: 0.85rem; /* Slightly smaller font size for error messages */
+    height: 14px; /* Ensures consistent spacing even if no error message is displayed */
+    transition: opacity 0.3s ease; /* Smooth appearance/disappearance of error messages */
 }
 
-#chatCounter {
-    font-size: 0.85 rem;
-    margin-bottom: 1rem;
+/* Character counter styles */
+#charCounter {
+    font-size: 0.85rem; /* Slightly smaller font size for the character counter */
+    margin-bottom: 1rem; /* Adds spacing below the character counter */
 }
 
+/* Character counter color when below 20 characters */
 #charCounter.red {
-    color: #dc3545;
+    color: #dc3545; /* Red text for invalid character count */
 }
 
+/* Character counter color when 20 or more characters */
 #charCounter.green {
-    color: #28a745;
+    color: #28a745; /* Green text for valid character count */
 }
 
+/* Success message styles */
 #successMessage {
-    color:#28a745;
-    font-weight: bold;
-    margin-top: 15px;
+    color: #28a745; /* Green text for success message */
+    font-weight: bold; /* Makes the success message bold */
+    margin-top: 15px; /* Adds spacing above the success message */
 }
 
-.secondary-button {
-    margin-top: 20px; /* Adds space above the button */
-    padding: 15px 30px; /* Adds padding inside the button */
+/* ===========================
+   Button Styles
+   =========================== */
+
+/* General button styles */
+.secondary-button,
+.cta-button {
+    margin-top: 20px; /* Adds spacing above the buttons */
+    padding: 15px 30px; /* Adds padding inside the buttons */
     background-color: #3b82f6; /* Sets the button background color to blue */
     color: #fff; /* Sets the button text color to white */
     border: none; /* Removes the default border */
-    border-radius: 8px; /* Rounds the corners of the button */
-    font-size: 1rem; /* Sets the font size */
+    border-radius: 8px; /* Rounds the corners of the buttons */
+    font-size: 1rem; /* Sets the font size for the buttons */
     cursor: pointer; /* Changes the cursor to a pointer on hover */
     transition: background-color 0.3s ease; /* Adds a smooth background color transition */
-    text-decoration: none; /* Removes underline from the button */
+    text-decoration: none; /* Removes underline from the button text */
 }
 
-.secondary-button:hover {
+/* Hover state for buttons */
+.secondary-button:hover,
+.cta-button:hover {
     background-color: #2563eb; /* Changes the button background color on hover */
 }
+
+/* ===========================
+   Responsive Design
+   =========================== */
+
+/* Media query for tablets and smaller devices (max width: 768px) */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 1rem; /* Adds padding around the form for smaller screens */
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+        font-size: 0.9rem; /* Slightly smaller font size for inputs */
+        padding: 8px; /* Reduces padding for smaller screens */
+    }
+
+    .secondary-button,
+    .cta-button {
+        width: 100%; /* Makes buttons full width on smaller screens */
+        padding: 12px; /* Adjusts padding for smaller buttons */
+    }
+
+    #charCounter {
+        font-size: 0.8rem; /* Reduces font size for the character counter */
+    }
+}
+
+/* Media query for mobile phones (max width: 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem; /* Reduces the base font size for smaller screens */
+    }
+
+    .contact-form {
+        padding: 0.5rem; /* Adds more compact padding for mobile devices */
+    }
+
+    .contact-form label {
+        font-size: 0.85rem; /* Reduces label font size */
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+        font-size: 0.85rem; /* Further reduces input font size */
+        padding: 6px; /* Reduces padding for inputs */
+    }
+
+    .secondary-button,
+    .cta-button {
+        font-size: 0.9rem; /* Reduces button font size */
+        padding: 10px; /* Adjusts padding for smaller buttons */
+    }
+}
+
