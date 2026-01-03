@@ -23,3 +23,9 @@ This is a portfolio website that includes a fully functional contact form with v
 ## Setup Instructions
 1. Clone the repository:
    git clone https://github.com/LinusDolck/Lab-2.git
+
+2. Open the project:
+   - Navigate into the folder
+   - Open index.html in your browser
+
+3. Enjoy! 
