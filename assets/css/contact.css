@@ -1,0 +1,19 @@
+/* Contact form specific styles */
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
