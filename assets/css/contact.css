@@ -36,3 +36,39 @@ select.valid {
     height: 14px;
     transition: opacity 0.3s ease;
 }
+
+#chatCounter {
+    font-size: 0.85 rem;
+    margin-bottom: 1rem;
+}
+
+#charCounter.red {
+    color: #dc3545;
+}
+
+#charCounter.green {
+    color: #28a745;
+}
+
+#successMessage {
+    color:#28a745;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.secondary-button {
+    margin-top: 20px; /* Adds space above the button */
+    padding: 15px 30px; /* Adds padding inside the button */
+    background-color: #3b82f6; /* Sets the button background color to blue */
+    color: #fff; /* Sets the button text color to white */
+    border: none; /* Removes the default border */
+    border-radius: 8px; /* Rounds the corners of the button */
+    font-size: 1rem; /* Sets the font size */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: background-color 0.3s ease; /* Adds a smooth background color transition */
+    text-decoration: none; /* Removes underline from the button */
+}
+
+.secondary-button:hover {
+    background-color: #2563eb; /* Changes the button background color on hover */
+}
