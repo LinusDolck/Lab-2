@@ -105,7 +105,7 @@ form.addEventListener("submit", (e) => {
         // Hide the success message after 3 seconds
         setTimeout(() => {
             successMessage.style.display = "none"; // Hides the success message
-        }, 3000);
+        }, 5000);
 
         // Reset the from and the character counter
         form.reset();
